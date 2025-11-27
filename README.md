@@ -41,3 +41,4 @@ This project involves containerizing and deploying a full-stack MEAN (MongoDB, E
 <img width="1846" height="548" alt="image" src="https://github.com/user-attachments/assets/67a82a1d-0c5a-47b0-8451-79b08bbd5bf6" />
 
 ---
+<img width="1856" height="816" alt="image" src="https://github.com/user-attachments/assets/a6383090-9bf4-4524-ada0-4ae886ca7873" />
