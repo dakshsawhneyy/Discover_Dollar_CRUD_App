@@ -1,27 +1,34 @@
-In this DevOps task, you need to build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
+# MEAN Stack CRUD Application - DevOps Assignment
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+## Project Overview
+This project involves containerizing and deploying a full-stack MEAN (MongoDB, Express, Angular, Node.js) application with a fully automated CI/CD pipeline.
 
-## Project setup
+**Live Demo:** [http:http://65.1.94.164]
 
-### Node.js Server
+## Tech Stack & Architecture
+- **Frontend:** Angular 15 (Multi-stage Docker build)
+- **Backend:** Node.js & Express (Multi-stage Docker build)
+- **Database:** MongoDB (Containerized)
+- **Proxy:** Nginx (Reverse Proxy)
+- **Infrastructure:** AWS EC2 (Ubuntu 22.04)
+- **CI/CD:** GitHub Actions -> Docker Hub -> AWS EC2
 
-cd backend
+## Architecture Diagram
+[User Request] -> [Nginx (Port 80)] -> [Frontend (Static Files)]
+                                     -> [Backend (Port 8080)] -> [MongoDB (Port 27017)]
 
-npm install
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+## Installation & Local Setup
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/dakshsawhneyy/Discover_Dollar_CRUD_App.git](https://github.com/dakshsawhneyy/Discover_Dollar_CRUD_App.git).git
+   cd Discover_Dollar_CRUD_App
+   
+   # Install Required Dependencies
+   ./setup.sh
 
-Run `node server.js`
+   # Docker Compose up
+   docker compose up -d 
+   ```
 
-### Angular Client
-
-cd frontend
-
-npm install
-
-Run `ng serve --port 8081`
-
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
-
-Navigate to `http://localhost:8081/`
+## Screenshots
