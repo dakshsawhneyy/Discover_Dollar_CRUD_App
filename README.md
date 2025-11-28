@@ -21,7 +21,7 @@ This project involves containerizing and deploying a full-stack MEAN (MongoDB, E
 ## Installation & Local Setup
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/dakshsawhneyy/Discover_Dollar_CRUD_App.git](https://github.com/dakshsawhneyy/Discover_Dollar_CRUD_App.git).git
+   git clone [https://github.com/dakshsawhneyy/Discover_Dollar_CRUD_App.git](https://github.com/dakshsawhneyy/Discover_Dollar_CRUD_App.git)
    cd Discover_Dollar_CRUD_App
    
    # Install Required Dependencies
